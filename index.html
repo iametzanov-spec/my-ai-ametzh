@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AMETZ AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">A</div>
+
+            <div>
+                <h2>AMETZ AI</h2>
+                <span>Artificial Intelligence</span>
+            </div>
+        </div>
+
+        <button class="new-chat" id="newChat">
+            <span>＋</span>
+            <span data-ru="Новый чат" data-en="New chat">
+                Новый чат
+            </span>
+        </button>
+
+        <div class="sidebar-title"
+             data-ru="Возможности"
+             data-en="Features">
+            Возможности
+        </div>
+
+        <div class="feature">
+            <span>🌍</span>
+            <p data-ru="Все языки" data-en="All languages">
+                Все языки
+            </p>
+        </div>
+
+        <div class="feature">
+            <span>🧠</span>
+            <p data-ru="Умный помощник" data-en="AI Assistant">
+                Умный помощник
+            </p>
+        </div>
+
+        <div class="feature">
+            <span>💻</span>
+            <p data-ru="Помощь с кодом" data-en="Coding help">
+                Помощь с кодом
+            </p>
+        </div>
+
+        <div class="feature">
+            <span>✍️</span>
+            <p data-ru="Работа с текстом" data-en="Text generation">
+                Работа с текстом
+            </p>
+        </div>
+
+        <div class="sidebar-bottom">
+            <span>AMETZ AI</span>
+            <small>Created by Imran Ametzhanov</small>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div>
+                <strong>AMETZ AI</strong>
+                <span class="online">
+                    ● Online
+                </span>
+            </div>
+
+            <div class="top-actions">
+
+                <select id="language">
+
+                    <option value="ru">🇷🇺 Русский</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="kk">🇰🇿 Қазақша</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                    <option value="uz">🇺🇿 O‘zbekcha</option>
+                    <option value="ky">🇰🇬 Кыргызча</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="ar">🇸🇦 العربية</option>
+                    <option value="zh">🇨🇳 中文</option>
+                    <option value="ja">🇯🇵 日本語</option>
+                    <option value="ko">🇰🇷 한국어</option>
+                    <option value="hi">🇮🇳 हिन्दी</option>
+
+                </select>
+
+                <button id="themeButton">
+                    ☀
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- CHAT -->
+
+        <section class="chat" id="chat">
+
+            <div class="welcome" id="welcome">
+
+                <div class="big-logo">
+                    A
+                </div>
+
+                <h1>AMETZ AI</h1>
+
+                <p
+                    data-ru="Твой персональный искусственный интеллект"
+                    data-en="Your personal artificial intelligence">
+                    Твой персональный искусственный интеллект
+                </p>
+
+                <div class="suggestions">
+
+                    <button data-question="Объясни мне Python простыми словами">
+                        💻
+                        <span
+                            data-ru="Объясни Python"
+                            data-en="Explain Python">
+                            Объясни Python
+                        </span>
+                    </button>
+
+                    <button data-question="Помоги придумать идею для сайта">
+                        💡
+                        <span
+                            data-ru="Идея для сайта"
+                            data-en="Website idea">
+                            Идея для сайта
+                        </span>
+                    </button>
+
+                    <button data-question="Переведи этот текст на английский">
+                        🌍
+                        <span
+                            data-ru="Перевод текста"
+                            data-en="Translate text">
+                            Перевод текста
+                        </span>
+                    </button>
+
+                    <button data-question="Напиши красивый текст для моего проекта">
+                        ✍️
+                        <span
+                            data-ru="Написать текст"
+                            data-en="Write text">
+                            Написать текст
+                        </span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INPUT -->
+
+        <div class="input-area">
+
+            <div class="input-box">
+
+                <textarea
+                    id="messageInput"
+                    rows="1"
+                    placeholder="Напишите сообщение AMETZ AI..."
+                    data-placeholder-ru="Напишите сообщение AMETZ AI..."
+                    data-placeholder-en="Message AMETZ AI...">
+                </textarea>
+
+                <div class="input-actions">
+
+                    <button id="attachButton">
+                        📎
+                    </button>
+
+                    <button id="voiceButton">
+                        🎤
+                    </button>
+
+                    <button class="send-button" id="sendButton">
+                        ➤
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="disclaimer"
+               data-ru="AMETZ AI может допускать ошибки. Проверяйте важную информацию."
+               data-en="AMETZ AI can make mistakes. Check important information.">
+                AMETZ AI может допускать ошибки.
+                Проверяйте важную информацию.
+            </p>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<input
+    type="file"
+    id="fileInput"
+    hidden>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
